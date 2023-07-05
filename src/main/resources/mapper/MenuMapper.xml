@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wht.mapper.MenuMapper">
+    <insert id="allocMenus">
+        insert into sys_roles_menus values
+        <foreach collection="menuIds" item="val" separator=",">
+            (${val},${roleId})
+        </foreach>
+    </insert>
+    <delete id="delMenus">
+        delete from sys_roles_menus where role_id = ${roleId}
+    </delete>
+
+    <select id="selectPermsByUserId" resultType="java.lang.String">
+        SELECT
+            DISTINCT m.`permission`
+        FROM
+            sys_users_roles ur
+                LEFT JOIN `sys_role` r ON ur.`role_id` = r.`role_id`
+                LEFT JOIN `sys_roles_menus` rm ON ur.`role_id` = rm.`role_id`
+                LEFT JOIN `sys_menu` m ON m.`menu_id` = rm.`menu_id`
+        WHERE
+            user_id = #{userid}
+    </select>
+    <select id="selectMenusByUserIdAndType" resultType="com.wht.entity.Menu">
+        SELECT
+            m.*
+        FROM
+            sys_users_roles ur
+                LEFT JOIN `sys_role` r ON ur.`role_id` = r.`role_id`
+                LEFT JOIN `sys_roles_menus` rm ON ur.`role_id` = rm.`role_id`
+                LEFT JOIN `sys_menu` m ON m.`menu_id` = rm.`menu_id`
+        WHERE
+            user_id = #{userid} and m.type &lt; #{type}
+        order by m.menu_sort asc
+    </select>
+    <select id="getMenusIdByRoleId" resultType="java.lang.Integer">
+        select menu_id from sys_roles_menus where role_id = ${roleId}
+    </select>
+</mapper>
