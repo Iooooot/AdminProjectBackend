@@ -87,3 +87,24 @@ AdminProjectBadckend
 | Kibana        | 7.17.3 | https://www.elastic.co/cn/downloads/kibana                   |
 
 ## 效果展示
+![show01](https://blogpic-1305209282.cos.ap-chengdu.myqcloud.com/img/show01.png)
+
+![show02](https://blogpic-1305209282.cos.ap-chengdu.myqcloud.com/img/show02.png)
+
+![show03](https://blogpic-1305209282.cos.ap-chengdu.myqcloud.com/img/show03.png)
+
+![show04](https://blogpic-1305209282.cos.ap-chengdu.myqcloud.com/img/show04.png)
+
+![show05](https://blogpic-1305209282.cos.ap-chengdu.myqcloud.com/img/show05.png)
+
+![show06](https://blogpic-1305209282.cos.ap-chengdu.myqcloud.com/img/show06.png)
+
+![show07](https://blogpic-1305209282.cos.ap-chengdu.myqcloud.com/img/show07.png)
+
+![show08](https://blogpic-1305209282.cos.ap-chengdu.myqcloud.com/img/show08.png)
+
+![show09](https://blogpic-1305209282.cos.ap-chengdu.myqcloud.com/img/show09.png)
+
+![show08](https://blogpic-1305209282.cos.ap-chengdu.myqcloud.com/img/show08.png)
+
+![show09](https://blogpic-1305209282.cos.ap-chengdu.myqcloud.com/img/show09.png)
