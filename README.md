@@ -2,7 +2,7 @@
 
 ## 项目介绍
 
-`AdminProjectBadckend`是一套完善的后台管理系统后端项目（对应的[前端](https://github.com/Iooooot/AdminProjectWeb)），该项目集成了众多后端热门中间件技术例如：Redis、SpringSecurity、Elasticsearch、RabbitMQ等。
+`AdminProjectBadckend`是一套完善的个人工作台后端项目（对应的[前端](https://github.com/Iooooot/AdminProjectWeb)），该项目集成了众多后端热门中间件技术例如：Redis、SpringSecurity、Elasticsearch、RabbitMQ等。
 
 **系统功能：**
 
